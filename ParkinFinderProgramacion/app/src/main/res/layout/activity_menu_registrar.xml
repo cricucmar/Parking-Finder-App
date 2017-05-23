@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context="com.cricumcar.parkinfinderprogramacion.MenuRegistrar">
+
+    <LinearLayout
+        android:layout_width="344dp"
+        android:layout_height="543dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:text="REGISTRA TU PARQUEADERO Y PERMITE\nA OTROS USUARIO PARQUEAR CON ELEGANCIA" />
+
+        <EditText
+            android:id="@+id/usuarioR"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="Nombre de Usuario"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/nombreParqueaderoR"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="Nombre del Parqueadero"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/contrasenaR"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/verificarContrasenaR"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="Verificar Contraseña"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.8"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/latitudR"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:hint="latitud" />
+
+            <TextView
+                android:id="@+id/longitudR"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:hint="longitud" />
+
+            <Button
+                android:id="@+id/ubicarR"
+                android:layout_width="0dp"
+                android:layout_height="47dp"
+                android:layout_weight="1"
+                android:background="@color/fondo"
+                android:drawableBottom="@drawable/ubicacion_gps" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/direccionR"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5" />
+
+        <Button
+            android:id="@+id/registrarR"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:text="REGISTRAR" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context="com.cricumcar.parkinfinderprogramacion.MenuPrincipal">
+
+
+    <LinearLayout
+        android:layout_width="344dp"
+        android:layout_height="543dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="\n PROYECTO DE PROGRAMACION\n\nAPLICACIÓN DESARROLLADA POR:\nCARLOS CRIOLLO\nPARQUEADEROS AL ALCANCE DE TODOS\nBUSQUEDA DE PARQUEADEROS DISPONIBLES" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <Button
+                android:id="@+id/irMapaP"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:drawableTop="@android:drawable/ic_menu_mapmode"
+                android:text="Ver Mapa"
+                android:textColor="@color/fondo" />
+
+            <Button
+                android:id="@+id/irIniciarSesionP"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:drawableTop="@android:drawable/ic_menu_myplaces"
+                android:text="Iniciar Sesion"
+                android:textColor="@color/fondo" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            app:srcCompat="@drawable/fondo" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

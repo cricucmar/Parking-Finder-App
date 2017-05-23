@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Parking Finder</string>
+    <string name="title_activity_menu_configurar">Ajustes de Cuenta</string>
+    <string name="iniciarSesion">Iniciar Sesion</string>
+    <string name="title_activity_menu_mapa">Map</string>
+
+</resources>

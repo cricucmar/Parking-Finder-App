@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map2"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context="com.cricumcar.parkinfinderprogramacion.MenuMapa" >
+
+    <LinearLayout
+        android:layout_width="344dp"
+        android:layout_height="543dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_marginLeft="15dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="PARQUEADEROS" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/irServicio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Usar Parqueadero" />
+
+            <Button
+                android:id="@+id/dameRuta"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Dame Ruta" />
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_marginLeft="15dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5" />
+
+        <TextView
+            android:id="@+id/descripcionM"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.8"
+            android:textSize="15dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult"
+            android:text="AQUI VA LA DESCRIPCION DEL PARQUEADERO ELEGIDO" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
